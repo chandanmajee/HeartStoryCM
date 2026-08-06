@@ -368,7 +368,7 @@ opacity:.95;
 
 }
 
-#createBtn{
+#startBtn{
 
 margin-top:45px;
 
@@ -394,7 +394,7 @@ transition:.35s;
 
 }
 
-#createBtn:hover{
+#startBtn:hover{
 
 transform:translateY(-6px) scale(1.05);
 
@@ -404,7 +404,7 @@ box-shadow:0 30px 60px rgba(0,0,0,.35);
 
 /* Floating Glow */
 
-#createBtn::before{
+#startBtn::before{
 
 content:"";
 
@@ -474,7 +474,7 @@ font-size:16px;
 
 }
 
-#createBtn{
+#startBtn{
 
 width:90%;
 
@@ -948,7 +948,7 @@ transform:translate(0,0);
 
 /* Button Shine */
 
-#createBtn{
+#startBtn{
 
 position:relative;
 
@@ -956,7 +956,7 @@ overflow:hidden;
 
 }
 
-#createBtn::after{
+#startBtn::after{
 
 content:"";
 
@@ -978,7 +978,7 @@ transition:.8s;
 
 }
 
-#createBtn:hover::after{
+#startBtn:hover::after{
 
 left:160%;
 
