@@ -1,86 +1,67 @@
 // =====================================
 // HeartStoryCM
-// app.js Part 1
+// app.js
 // =====================================
 
 // Loader
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
 
-window.addEventListener("load",()=>{
-
-const loader=document.getElementById("loader");
-
-setTimeout(()=>{
-
-loader.style.opacity="0";
-
-loader.style.visibility="hidden";
-
-},1200);
-
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.visibility = "hidden";
+  }, 1200);
 });
-
 
 // Mouse Glow
+const glow = document.querySelector(".mouse-glow");
 
-const glow=document.querySelector(".mouse-glow");
+document.addEventListener("mousemove", (e) => {
+  if (!glow) return;
 
-document.addEventListener("mousemove",(e)=>{
-
-glow.style.left=e.clientX+"px";
-
-glow.style.top=e.clientY+"px";
-
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
 });
 
-
 // Floating Hearts
-
 const hearts = document.getElementById("hearts");
 
-const emojis=[
-
-"❤️",
-
-"💖",
-
-"💕",
-
-"💗",
-
-"💘",
-
-"💝"
-
+const emojis = [
+  "❤️",
+  "💖",
+  "💕",
+  "💗",
+  "💘",
+  "💝"
 ];
 
+function createHeart() {
+  if (!hearts) return;
 
-function createHeart(hearts.appendChild(heart);){
+  const heart = document.createElement("div");
 
-const heart=document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
 
-heart.className="heart";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (18 + Math.random() * 25) + "px";
+  heart.style.animationDuration = (8 + Math.random() * 5) + "s";
+  heart.style.opacity = Math.random() * 0.7 + 0.3;
 
-heart.innerHTML=
+  hearts.appendChild(heart);
 
-emojis[Math.floor(Math.random()*emojis.length)];
-
-heart.style.left=Math.random()*100+"vw";
-
-heart.style.fontSize=(18+Math.random()*35)+"px";
-
-heart.style.animationDuration=(8+Math.random()*6)+"s";
-
-heart.style.opacity=Math.random();
-
-document.getElementById("hearts").appendChild(heart);
-
-setTimeout(()=>{
-
-heart.remove();
-
-},14000);
-
+  setTimeout(() => {
+    heart.remove();
+  }, 13000);
 }
 
+setInterval(createHeart, 250);
 
-setInterval(createHeart,250);
+// Start Button
+const startBtn = document.getElementById("startBtn");
+
+if (startBtn) {
+  startBtn.addEventListener("click", () => {
+    alert("Welcome to HeartStoryCM ❤️");
+  });
+}
