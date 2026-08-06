@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HeartStoryCM ❤️</title>
+<title>HeartStoryCM ❤️ | Turn Memories Into Magic</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,11 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<!-- GSAP ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
 </head>
 
@@ -23,119 +27,69 @@
 <!-- Floating Hearts -->
 <div id="hearts"></div>
 
-<!-- Navbar -->
-
 <header>
 
 <div class="logo">
-
 ❤️ HeartStoryCM
-
 </div>
 
 <nav>
-
 <a href="#">Home</a>
-
 <a href="#">Features</a>
-
 <a href="#">Privacy</a>
-
 <a href="#">Contact</a>
-
 </nav>
 
 </header>
 
-<!-- Hero -->
-
 <section class="hero">
 
-<h1>
-
-Turn Memories Into Magic
-
-</h1>
+<h1>Turn Memories Into Magic ✨</h1>
 
 <p>
-
 Create beautiful interactive memory stories with complete privacy.
-
+Your uploads are encrypted and automatically deleted after 24 hours.
 </p>
 
 <button id="createBtn">
-
 ✨ Create Your Story
-
 </button>
 
 </section>
 
-<!-- Features -->
-
 <section class="features">
 
 <div class="card">
-
-🔒
-
+<h2>🔒</h2>
 <h3>Secure Upload</h3>
-
-<p>
-
-Your memories stay protected.
-
-</p>
-
+<p>Your memories stay protected.</p>
 </div>
 
 <div class="card">
-
-🗑️
-
+<h2>🗑️</h2>
 <h3>Auto Delete</h3>
-
-<p>
-
-Deleted automatically after 24 hours.
-
-</p>
-
+<p>Deleted permanently after 24 hours.</p>
 </div>
 
 <div class="card">
-
-❤️
-
+<h2>❤️</h2>
 <h3>Private Story</h3>
-
-<p>
-
-Only people with your link can open it.
-
-</p>
-
+<p>Only people with your private link can open it.</p>
 </div>
 
 </section>
 
-<!-- Trust -->
-
 <section class="trust">
 
-<h2>
-
-Privacy First
-
-</h2>
+<h2>Privacy First</h2>
 
 <p>
 
 ✔ Encrypted Uploads<br>
 
-✔ Auto Delete<br>
-
 ✔ Delete Anytime<br>
+
+✔ Auto Delete After 24 Hours<br>
 
 ✔ No Public Gallery
 
@@ -143,38 +97,34 @@ Privacy First
 
 </section>
 
-<!-- CAPTCHA -->
-
 <section class="captcha">
 
-<h2>
-
-Verify you're human
-
-</h2>
+<h2>Verify you're human</h2>
 
 <div class="cf-turnstile"
-
 data-sitekey="YOUR_SITE_KEY">
-
 </div>
 
 <button id="continueBtn">
-
 Continue →
-
 </button>
 
 </section>
 
 <footer>
 
-© 2026 HeartStoryCM
+<h3>❤️ HeartStoryCM</h3>
+
+<p>Turn Memories Into Magic</p>
+
+<p>© 2026 HeartStoryCM</p>
 
 </footer>
 
+<!-- Cloudflare Turnstile -->
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
+<!-- Main JS -->
 <script src="js/app.js"></script>
 
 </body>
