@@ -35,12 +35,7 @@ glow.style.top=e.clientY+"px";
 
 // Floating Hearts
 
-const hearts=document.createElement("div");
-
-hearts.id="hearts";
-
-document.body.appendChild(hearts);
-
+const hearts = document.getElementById("hearts");
 
 const emojis=[
 
@@ -59,7 +54,7 @@ const emojis=[
 ];
 
 
-function createHeart(){
+function createHeart(hearts.appendChild(heart);){
 
 const heart=document.createElement("div");
 
